@@ -78,3 +78,18 @@ Next, add an authenticated user to log in to the template. In your Supabase proj
 Once you've completed this process, return to the login form and log in to the template. You should see the <strong>members</strong> that we just added to the database.
 
 ![Template with data](/public/guides/remix-dashboard.png)
+
+## Create the services table
+
+To manage the work that R.J.H-MAINTENANCE offers, create a `services` table in Supabase using the following SQL:
+
+```sql
+CREATE TABLE services (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  name TEXT NOT NULL,
+  description TEXT NOT NULL
+);
+```
+
+Add your own service records so they appear in the mobile application.
