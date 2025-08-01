@@ -60,3 +60,7 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ## Support
 
 If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+## Mobile Application
+
+A simple React Native application is available in the `mobile` directory. It allows users to sign up or log in and view available services from Supabase. See `mobile/README.md` for setup instructions.
+
